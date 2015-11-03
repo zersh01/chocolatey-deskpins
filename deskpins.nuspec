@@ -21,6 +21,7 @@
     <tags>deskpins pins windows ontop</tags>
     <copyright>Elias Fotinis</copyright>
     <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+    <iconUrl>https://cdn.rawgit.com/zersh01/chocolatey-deskpins/master/Icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>Autopin feature. 
 	Pins can be of any color. 

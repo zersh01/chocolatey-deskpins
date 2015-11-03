@@ -2,7 +2,6 @@
 $installerType = 'exe'
 $url = 'http://files.snapfiles.com/directdl/DeskPins130.zip'
 $silentArgs = '/S'
-$validExitCodes = @(0)
 
 $chocTempDir = Join-Path $env:TEMP "chocolatey"
 $tempDir = Join-Path $chocTempDir "$packageName"
