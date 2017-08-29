@@ -1,4 +1,4 @@
-$packageName = 'deskpins'
+﻿$packageName = 'deskpins'
 $fileType = 'exe'
 $silentArgs = '/S'
   
@@ -13,3 +13,7 @@ if ($uninstallString -ne "") {
   Stop-Process -Name deskpins
   Uninstall-ChocolateyPackage $packageName $fileType $silentArgs $uninstallString
 }
+
+
+
+

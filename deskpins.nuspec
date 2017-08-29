@@ -1,32 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>deskpins</id>
     <title>DeskPins</title>
-    <version>1.30</version>
+    <version>1.32.1</version>
     <authors>Elias Fotinis</authors>
     <owners>zersh</owners>
     <summary>Pin applications to stay on top of other windows</summary>
     <description>DeskPins is a lightweight Windows application that can force running programs to stay on top of others.
-	In essence a freeware tool that brings "Always on Top" functionality to any software solution on your computer, 
-	DeskPins is very easy to use, creating so-called "pins" to keeps apps on top.
-	Once you launch it, DeskPins places an icon in the Windows System Tray that lets you instantly enable the 
-	application and thus insert a new icon in the titlebar of every running process to help you keep it on top.
+In essence a freeware tool that brings "Always on Top" functionality to any software solution on your computer, 
+DeskPins is very easy to use, creating so-called "pins" to keeps apps on top.
+Once you launch it, DeskPins places an icon in the Windows System Tray that lets you instantly enable the 
+application and thus insert a new icon in the titlebar of every running process to help you keep it on top.
 	
-	Программа для закрепления любого окна поверх всех остальных.
+Программа для закрепления любого окна поверх всех остальных.
 </description>
-    <projectUrl>http://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/DeskPins.shtml</projectUrl>
-    <tags>deskpins pins windows ontop</tags>
+    <projectUrl>http://efotinis.neocities.org/deskpins/index.html</projectUrl>
+    <tags>deskpins pins windows ontop admin</tags>
     <copyright>Elias Fotinis</copyright>
     <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
-    <iconUrl>https://cdn.rawgit.com/zersh01/chocolatey-deskpins/master/Icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Autopin feature. 
-	Pins can be of any color. 
-	Tab-based Options dialog. 
-	Fixed a multi-monitor bug reported by Grant Emsley and tested on multi-monitors system.</releaseNotes>
+    <releaseNotes>Version 1.32.1 - change Download URL
+Fixed inability to autopin windows of 64-bit processes.
+Unlimited number of pins available.
+Intelligent handling of various application types.
+Powerful wildcard-based automatic pin support.
+Global hotkeys.
+Negligible system resources usage.</releaseNotes>
+    <iconUrl>https://cdn.rawgit.com/zersh01/chocolatey-deskpins/master/Icon.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,15 +1,17 @@
 ﻿$packageName = 'deskpins'
 $installerType = 'exe'
-$url = 'http://files.snapfiles.com/directdl/DeskPins130.zip'
+$url = 'https://bitbucket.org/efotinis/deskpins/downloads/DeskPins-1.32-setup.exe'
 $silentArgs = '/S'
 
-$chocTempDir = Join-Path $env:TEMP "chocolatey"
-$tempDir = Join-Path $chocTempDir "$packageName"
-$tempDir = Join-Path $tempDir "unzip"
-if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+$checksum = '5A669C5723F8E1E6ADC328B3869A8955'
 
-Install-ChocolateyZipPackage "$packageName" "$url" "$tempDir"
-$exeFilePath = get-childitem $tempDir -recurse -include *.$installerType | select -First 1
-Install-ChocolateyInstallPackage "$packageName" "$installerType" "$silentArgs" "$exeFilePath"
+$checksumType = 'md5'
+ 
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url"  -Checksum "$checksum" -ChecksumType "$checksumType"
 
-Remove-Item "$tempDir" -Recurse
+
+
+
+
+
+
