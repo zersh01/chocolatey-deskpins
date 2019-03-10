@@ -28,7 +28,7 @@ Intelligent handling of various application types.
 Powerful wildcard-based automatic pin support.
 Global hotkeys.
 Negligible system resources usage.</releaseNotes>
-    <iconUrl>https://cdn.rawgit.com/zersh01/chocolatey-deskpins/master/Icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/zersh01/chocolatey-deskpins@master/Icon.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
